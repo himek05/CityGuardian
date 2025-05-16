@@ -1,0 +1,7 @@
+train: C:\Users\himek\Desktop\potholedetection\Dataset\train\images
+val: C:\Users\himek\Desktop\potholedetection\Dataset\valid\images
+
+
+
+names:
+  0: pothole
