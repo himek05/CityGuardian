@@ -5,7 +5,7 @@ import time
 import os
 
 app = Flask(__name__)
-model = YOLO(r"C:\Users\himek\Desktop\proje\runs\detect\train\weights\best.pt")  # Ensure this file exists or download a YOLOv8 model
+model = YOLO("yolov8n-seg.pt")  # Ensure this file exists or download a YOLOv8 model
 print(model.names)
 
 @app.route('/', methods=['GET', 'POST'])
