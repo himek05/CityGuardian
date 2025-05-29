@@ -5,10 +5,10 @@ import time
 import os
 
 app = Flask(__name__)
-model = YOLO("yolov8n-seg.pt")  # Ensure this file exists or download a YOLOv8 model
+model = YOLO(r"C:\Users\himek\Desktop\proje\potholedetection\runs\detect\train\weights\last.pt")  
 print(model.names)
 
-@app.route('/', methods=['GET', 'POST'])
+@app.route('/', methods=['GET', 'POST']) 
 def index():
     result_image = None
     if request.method == 'POST':
